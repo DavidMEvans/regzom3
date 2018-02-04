@@ -1,0 +1,72 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Register for possible Zombies</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Creepster">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{%  static 'css/reg.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static "css/fonts/" %}">
+</head>
+<body>
+
+ <!--   <div onmousemove="myMove()"><img src="/static/media/blood.png"</div>   -->
+
+<div class="container">
+   <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="/index/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'blogpostform' %}">New Sighting</a></li>
+                <li><a href="{% url 'postdetails' %}">Existing Sighting</a></li>
+                <li><a href="{% url 'donations' %}">Donations</a></li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
+            {% else %}
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Log In</a></li>
+            {% endif %}
+        </ul>
+   <article id="heading">
+       <h1><span class="fui-settings-16 muted">Zombie at risk Register</span></h1>
+   </div>
+   <hr>
+    <img src="/static/media/ZombieTransformation.png" style="width:400px; height: 400px>
+
+    {% if messages %}
+        <div class="alert alert-success">
+            <div class="messages">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+   <div class="container">
+       {% block content %}
+       {% endblock %}
+   </div>
+
+   <hr>
+ <div class="container">
+   <div class="footer">
+       <article id="footer">
+       <p>Made By Michael Evans and Django </p>
+   </div>
+</div>
+
+</body>
+
+<!-- script references -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+</script>
+</html>

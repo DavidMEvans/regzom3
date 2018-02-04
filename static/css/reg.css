@@ -1,0 +1,121 @@
+.navbar-form input, .form-inline input {
+    width: auto;
+}
+
+#explain {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+#zom {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding-top: 50px;
+}
+
+#login {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 50px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#footer {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    color: red;
+    padding-left: 25px;
+    text-align: left;
+}
+
+h1, h1 a {
+    color: darkred;
+    text-decoration: none;
+    padding-left: 0px;
+    text-align: left;
+}
+
+
+h2 {
+    color: green;
+    text-decoration: none;
+    padding-left: 0px;
+    text-align: left;
+}
+
+#heading h1 {
+    font-family: 'Creepster', cursive, Marker Felt, Arial, sans-serif;
+    font-size: 70px;
+    line-height: 1;
+    margin-top: 50px;
+    color: red;
+}
+
+#content {
+    padding-top: 50px;
+    font-size: 24px;
+    color: black;
+    padding-left: 0px;
+    text-align: left;
+}
+
+#about {
+    padding-top: 50px;
+    font-size: 24px;
+    color: black;
+    padding-left: 0px;
+    text-align: left;
+}
+
+#donation {
+    font-size: 24px;
+    color: black;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#answer {
+    color: green;
+    text-align: left;
+}
+
+#home {
+    padding-top: 50px;
+    font-size: 24px;
+    color: black;
+    padding-left: 0px;
+    text-align: left;
+}
+
+a, a:hover {
+    color: #223344;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#messages {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+}
