@@ -3,8 +3,9 @@ import dj_database_url
 
 DEBUG = False
 
-DATABASES = {'default': dj_database_url.config('mysql://b91a1de1322310:d6bc7f41@eu-cdbr-west-02.cleardb.net/heroku_40c76d061922b57?')
-}
+
+DATABASES = {'default': dj_database_url.parse(os.environ.get('CLEARDB_DATABASE_URL')) }
+
 
 #DATABASES = {
 #    'default': {

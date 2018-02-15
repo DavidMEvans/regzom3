@@ -35,4 +35,3 @@ README Zombie at Risk Register
 17.  Software used Django Paypal - no longer using.
 
 18.  Using Stripe for payments.# regzom3
-# regzom3
