@@ -13,7 +13,7 @@ from django.core.wsgi import get_wsgi_application
 
 
 #os.environ.setdefault("DJANGO_SETTINGS_MODULE", "RegZom.settings")
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.staging")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.staging.py")
 
 application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
+
