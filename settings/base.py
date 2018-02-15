@@ -61,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'RegZom.wsgi.application'
+WSGI_APPLICATION = 'regzom3.wsgi.application'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
