@@ -43,7 +43,7 @@ MIDDLEWARE = [
    # 'django.debug_toolbar.middleware.DebugToolbarMiddleware ',
 ]
 
-ROOT_URLCONF = 'RegZom.urls'
+ROOT_URLCONF = 'regzom3.urls'
 
 TEMPLATES = [
     {

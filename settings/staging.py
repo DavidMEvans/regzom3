@@ -3,26 +3,14 @@ import dj_database_url
 
 DEBUG = False
 
-
 DATABASES = {'default': dj_database_url.parse(os.environ.get('CLEARDB_DATABASE_URL')) }
-
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#}
 
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', '<STRIPE_PUBLISHABLE key>')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', '<STRIPE_SECRET key>')
 
-# Paypal environment variables
-#PAYPAL_NOTIFY_URL = 'https://291e2d8f.ngrok.io/a-very-hard-to-guess-url/'
-#PAYPAL_RECEIVER_EMAIL = 'aaron@codeinstitute.net'
-
 SITE_URL = 'https://regzom.herokuapp.com'
-ALLOWED_HOSTS.append('https://regzom.herokuapp.com')
+ALLOWED_HOSTS.append('regzom.herokuapp.com')
 
 # Log DEBUG information to the console
 LOGGING = {
