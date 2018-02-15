@@ -24,4 +24,4 @@ six==1.10.0
 stripe==1.77.1
 urllib3==1.22
 wheel==0.24.0
-whitenoise==3.2
+
