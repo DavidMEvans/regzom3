@@ -1,1 +1,1 @@
-web: gunicorn regzom3.wsgi:application
+web: gunicorn RegZom3.wsgi:application

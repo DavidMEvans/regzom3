@@ -9,8 +9,8 @@ DATABASES = {'default': dj_database_url.parse(os.environ.get('CLEARDB_DATABASE_U
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', '<STRIPE_PUBLISHABLE key>')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET', '<STRIPE_SECRET key>')
 
-SITE_URL = 'https://regzom.herokuapp.com'
-ALLOWED_HOSTS.append('regzom.herokuapp.com')
+SITE_URL = 'https://regzom3.herokuapp.com'
+ALLOWED_HOSTS.append('regzom3.herokuapp.com')
 
 # Log DEBUG information to the console
 LOGGING = {
